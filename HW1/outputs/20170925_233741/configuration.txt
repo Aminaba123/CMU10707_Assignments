@@ -1,0 +1,16 @@
+resume                        				0
+resume_file                   				'data_epoch_100_lr_0.01_weightdecay_1e-08_optim_momentum_seed_9237.mat'
+num_epoch                     				200
+num_class                     				10
+num_units                     				100
+im_width                      				28
+im_height                     				28
+data_path                     				'dataset'
+save_dir                      				'outputs/20170925_233741'
+cache_path                    				'cache'
+debug_mode                    				1
+vis                           				1
+seed                          				8469
+initialization_method         				'gaussian'
+check_grad                    				1
+num_check                     				10

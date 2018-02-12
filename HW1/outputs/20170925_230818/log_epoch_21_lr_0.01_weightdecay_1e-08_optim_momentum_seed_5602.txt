@@ -1,0 +1,108 @@
+configuration is:
+                   resume: 0
+              resume_file: 'data_epoch_200_lr_0.1_weightdecay_1e-07_optim_sgd_seed_7417.mat'
+                num_epoch: 21
+                num_class: 10
+                num_units: 64
+               num_units2: 32
+                 im_width: 28
+                im_height: 28
+                data_path: 'dataset'
+                 save_dir: 'outputs/20170925_230818'
+               cache_path: 'cache'
+               debug_mode: 1
+                      vis: 1
+                     seed: 5602
+    initialization_method: 'gaussian'
+               check_grad: 0
+                num_check: 10
+                    train: [1×1 struct]
+
+
+
+############################################### loading data ###############################################
+
+loading data.....
+
+cache data found in cache.....
+dimension of input training data (num_data, height, width): (3000, 28, 28)
+dimension of input validation data (num_data, height, width): (1000, 28, 28)
+dimension of input testing data (num_data, height, width): (3000, 28, 28)
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000000001.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000000301.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000000601.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000000901.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000001201.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000001501.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000001801.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000002101.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000002401.jpg
+save sample input to outputs/20170925_230818/visualization/input_samples/input_sample_index_0000002701.jpg
+
+
+############################################ create the network ############################################
+
+network is:
+   784    64    32    10
+
+network has 3 layers, including the input layer
+
+
+############################################### start training ###############################################
+
+training parameters are:
+      batch_size: 1
+         shuffle: 1
+           optim: 'momentum'
+        momentum: 0.9000
+              lr: 0.0100
+    weight_decay: 1.0000e-08
+      activation: 'sigmoid'
+
+Epoch 1 - accuracy (train, validation): (0.28833, 0.29800) 	 loss (train, validation): (1.87172, 1.88577) 
+Epoch 2 - accuracy (train, validation): (0.35400, 0.35800) 	 loss (train, validation): (1.62762, 1.65748) 
+Epoch 3 - accuracy (train, validation): (0.60600, 0.58300) 	 loss (train, validation): (1.04110, 1.09953) 
+Epoch 4 - accuracy (train, validation): (0.74467, 0.70800) 	 loss (train, validation): (0.76895, 0.86471) 
+Epoch 5 - accuracy (train, validation): (0.84500, 0.79100) 	 loss (train, validation): (0.51632, 0.65185) 
+Epoch 6 - accuracy (train, validation): (0.92267, 0.86300) 	 loss (train, validation): (0.28033, 0.46754) 
+Epoch 7 - accuracy (train, validation): (0.93767, 0.88700) 	 loss (train, validation): (0.21972, 0.41262) 
+Epoch 8 - accuracy (train, validation): (0.93133, 0.87800) 	 loss (train, validation): (0.23795, 0.41059) 
+Epoch 9 - accuracy (train, validation): (0.95667, 0.88200) 	 loss (train, validation): (0.15451, 0.39562) 
+Epoch 10 - accuracy (train, validation): (0.96667, 0.89700) 	 loss (train, validation): (0.12022, 0.35996) 
+Epoch 11 - accuracy (train, validation): (0.97433, 0.89700) 	 loss (train, validation): (0.09379, 0.35751) 
+Epoch 12 - accuracy (train, validation): (0.98533, 0.90800) 	 loss (train, validation): (0.06232, 0.33941) 
+Epoch 13 - accuracy (train, validation): (0.97067, 0.89800) 	 loss (train, validation): (0.08307, 0.41313) 
+Epoch 14 - accuracy (train, validation): (0.98467, 0.90000) 	 loss (train, validation): (0.05693, 0.36525) 
+Epoch 15 - accuracy (train, validation): (0.99200, 0.90300) 	 loss (train, validation): (0.03649, 0.38732) 
+Epoch 16 - accuracy (train, validation): (0.99700, 0.91500) 	 loss (train, validation): (0.02053, 0.32686) 
+Epoch 17 - accuracy (train, validation): (0.99767, 0.91800) 	 loss (train, validation): (0.01609, 0.34668) 
+Epoch 18 - accuracy (train, validation): (0.99833, 0.91600) 	 loss (train, validation): (0.01342, 0.34748) 
+Epoch 19 - accuracy (train, validation): (0.99867, 0.91600) 	 loss (train, validation): (0.01163, 0.35367) 
+Epoch 20 - accuracy (train, validation): (0.99867, 0.91800) 	 loss (train, validation): (0.00940, 0.34123) 
+Epoch 21 - accuracy (train, validation): (0.99867, 0.92400) 	 loss (train, validation): (0.00817, 0.33267) 
+
+
+############################################### testing ###############################################
+
+Testing dataset: accuracy is 91.27% 	 loss is 0.41410
+
+
+############################################### visualizing the weights ###############################################
+
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+
+
+############################################### plot curve and save ###############################################
+
+save classification error vs training curve to outputs/20170925_230818/visualization/training_curve/classification_error_graph.eps
+save average cross-entropy loss vs training curve to outputs/20170925_230818/visualization/training_curve/cross_entropy_loss_graph.eps
+
+
+############################################### done ###############################################
+
+run main.m
+
+
+############################################### configuration ###############################################
+

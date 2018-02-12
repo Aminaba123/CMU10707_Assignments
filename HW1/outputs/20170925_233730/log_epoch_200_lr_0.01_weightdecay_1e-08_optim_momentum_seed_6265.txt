@@ -1,0 +1,74 @@
+configuration is:
+                   resume: 0
+              resume_file: 'data_epoch_100_lr_0.01_weightdecay_1e-08_optim_momentum_seed_9237.mat'
+                num_epoch: 200
+                num_class: 10
+                num_units: 100
+                 im_width: 28
+                im_height: 28
+                data_path: 'dataset'
+                 save_dir: 'outputs/20170925_233730'
+               cache_path: 'cache'
+               debug_mode: 1
+                      vis: 1
+                     seed: 6265
+    initialization_method: 'gaussian'
+               check_grad: 1
+                num_check: 10
+                    train: [1×1 struct]
+
+
+
+############################################### loading data ###############################################
+
+loading data.....
+
+cache data found in cache.....
+dimension of input training data (num_data, height, width): (3000, 28, 28)
+dimension of input validation data (num_data, height, width): (1000, 28, 28)
+dimension of input testing data (num_data, height, width): (3000, 28, 28)
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000000001.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000000301.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000000601.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000000901.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000001201.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000001501.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000001801.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000002101.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000002401.jpg
+save sample input to outputs/20170925_233730/visualization/input_samples/input_sample_index_0000002701.jpg
+
+
+############################################ create the network ############################################
+
+network is:
+   784   100    10
+
+network has 2 layers, including the input layer
+
+
+############################################### gradient checking ###############################################
+
+start checking 10 randomly chosen weight W at each layer
+checking layer 1
+checking layer 2
+no gradient error found in weight W
+start checking 10 randomly chosen bias b at each layer
+checking layer 1
+checking layer 2
+no gradient error found in bias b
+
+
+############################################### start training ###############################################
+
+training parameters are:
+      batch_size: 1
+         shuffle: 1
+           optim: 'momentum'
+        momentum: 0.9000
+              lr: 0.0100
+    weight_decay: 1.0000e-08
+      activation: 'tanh'
+
+Epoch 1 - accuracy (train, validation): (0.59100, 0.57700) 	 loss (train, validation): (3.16521, 3.15649) 
+Epoch 2 - accuracy (train, validation): (0.67800, 0.65700) 	 loss (train, validation): (1.98488, 2.36466) 

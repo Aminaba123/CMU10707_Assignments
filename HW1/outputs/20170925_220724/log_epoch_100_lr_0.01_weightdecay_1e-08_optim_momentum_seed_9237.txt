@@ -1,0 +1,185 @@
+configuration is:
+                   resume: 0
+              resume_file: 'data_epoch_200_lr_0.1_weightdecay_1e-07_optim_sgd_seed_7417.mat'
+                num_epoch: 100
+                num_class: 10
+                num_units: 256
+               num_units2: 128
+                 im_width: 28
+                im_height: 28
+                data_path: 'dataset'
+                 save_dir: 'outputs/20170925_220724'
+               cache_path: 'cache'
+               debug_mode: 1
+                      vis: 1
+                     seed: 9237
+    initialization_method: 'gaussian'
+               check_grad: 0
+                num_check: 10
+                    train: [1×1 struct]
+
+
+
+############################################### loading data ###############################################
+
+loading data.....
+
+cache data found in cache.....
+dimension of input training data (num_data, height, width): (3000, 28, 28)
+dimension of input validation data (num_data, height, width): (1000, 28, 28)
+dimension of input testing data (num_data, height, width): (3000, 28, 28)
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000000001.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000000301.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000000601.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000000901.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000001201.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000001501.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000001801.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000002101.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000002401.jpg
+save sample input to outputs/20170925_220724/visualization/input_samples/input_sample_index_0000002701.jpg
+
+
+############################################ create the network ############################################
+
+network is:
+   784   256   128    10
+
+network has 3 layers, including the input layer
+
+
+############################################### start training ###############################################
+
+training parameters are:
+      batch_size: 1
+         shuffle: 1
+           optim: 'momentum'
+        momentum: 0.9000
+              lr: 0.0100
+    weight_decay: 1.0000e-08
+      activation: 'sigmoid'
+
+Epoch 1 - accuracy (train, validation): (0.24067, 0.22900) 	 loss (train, validation): (1.85286, 1.86377) 
+Epoch 2 - accuracy (train, validation): (0.25333, 0.23900) 	 loss (train, validation): (1.76275, 1.81035) 
+Epoch 3 - accuracy (train, validation): (0.29567, 0.28400) 	 loss (train, validation): (1.67890, 1.74085) 
+Epoch 4 - accuracy (train, validation): (0.46333, 0.47000) 	 loss (train, validation): (1.34298, 1.40266) 
+Epoch 5 - accuracy (train, validation): (0.69433, 0.67000) 	 loss (train, validation): (0.87362, 0.95963) 
+Epoch 6 - accuracy (train, validation): (0.87167, 0.82500) 	 loss (train, validation): (0.43067, 0.58778) 
+Epoch 7 - accuracy (train, validation): (0.91167, 0.86200) 	 loss (train, validation): (0.30618, 0.44565) 
+Epoch 8 - accuracy (train, validation): (0.92000, 0.86600) 	 loss (train, validation): (0.28841, 0.52742) 
+Epoch 9 - accuracy (train, validation): (0.93200, 0.86400) 	 loss (train, validation): (0.22467, 0.42787) 
+Epoch 10 - accuracy (train, validation): (0.92800, 0.86900) 	 loss (train, validation): (0.21671, 0.45237) 
+Epoch 11 - accuracy (train, validation): (0.96733, 0.90000) 	 loss (train, validation): (0.11263, 0.35086) 
+Epoch 12 - accuracy (train, validation): (0.97633, 0.90200) 	 loss (train, validation): (0.09118, 0.35755) 
+Epoch 13 - accuracy (train, validation): (0.98233, 0.90700) 	 loss (train, validation): (0.06952, 0.33660) 
+Epoch 14 - accuracy (train, validation): (0.97667, 0.89800) 	 loss (train, validation): (0.07473, 0.37890) 
+Epoch 15 - accuracy (train, validation): (0.98733, 0.91200) 	 loss (train, validation): (0.04709, 0.33759) 
+Epoch 16 - accuracy (train, validation): (0.99400, 0.91200) 	 loss (train, validation): (0.02892, 0.34229) 
+Epoch 17 - accuracy (train, validation): (0.99533, 0.91600) 	 loss (train, validation): (0.02255, 0.30594) 
+Epoch 18 - accuracy (train, validation): (0.99500, 0.91200) 	 loss (train, validation): (0.02547, 0.35368) 
+Epoch 19 - accuracy (train, validation): (0.99433, 0.91800) 	 loss (train, validation): (0.02170, 0.34817) 
+Epoch 20 - accuracy (train, validation): (0.99800, 0.92500) 	 loss (train, validation): (0.01166, 0.30857) 
+Epoch 21 - accuracy (train, validation): (0.99833, 0.91700) 	 loss (train, validation): (0.01030, 0.31039) 
+Epoch 22 - accuracy (train, validation): (0.99900, 0.91900) 	 loss (train, validation): (0.00785, 0.31152) 
+Epoch 23 - accuracy (train, validation): (0.99867, 0.91700) 	 loss (train, validation): (0.00644, 0.31219) 
+Epoch 24 - accuracy (train, validation): (0.99900, 0.91900) 	 loss (train, validation): (0.00534, 0.31241) 
+Epoch 25 - accuracy (train, validation): (0.99967, 0.92300) 	 loss (train, validation): (0.00475, 0.32531) 
+Epoch 26 - accuracy (train, validation): (0.99967, 0.91600) 	 loss (train, validation): (0.00387, 0.32124) 
+Epoch 27 - accuracy (train, validation): (0.99967, 0.92200) 	 loss (train, validation): (0.00311, 0.31984) 
+Epoch 28 - accuracy (train, validation): (0.99967, 0.91700) 	 loss (train, validation): (0.00272, 0.32263) 
+Epoch 29 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00253, 0.32880) 
+Epoch 30 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00218, 0.32283) 
+Epoch 31 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00201, 0.32417) 
+Epoch 32 - accuracy (train, validation): (1.00000, 0.91700) 	 loss (train, validation): (0.00183, 0.32552) 
+Epoch 33 - accuracy (train, validation): (1.00000, 0.91600) 	 loss (train, validation): (0.00170, 0.32957) 
+Epoch 34 - accuracy (train, validation): (1.00000, 0.91700) 	 loss (train, validation): (0.00158, 0.32560) 
+Epoch 35 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00147, 0.32753) 
+Epoch 36 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00139, 0.33204) 
+Epoch 37 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00131, 0.33143) 
+Epoch 38 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00124, 0.33056) 
+Epoch 39 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00118, 0.33469) 
+Epoch 40 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00111, 0.33133) 
+Epoch 41 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00106, 0.33310) 
+Epoch 42 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00102, 0.33356) 
+Epoch 43 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00097, 0.33630) 
+Epoch 44 - accuracy (train, validation): (1.00000, 0.91700) 	 loss (train, validation): (0.00093, 0.33633) 
+Epoch 45 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00089, 0.33541) 
+Epoch 46 - accuracy (train, validation): (1.00000, 0.91700) 	 loss (train, validation): (0.00086, 0.33766) 
+Epoch 47 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00083, 0.33787) 
+Epoch 48 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00079, 0.33791) 
+Epoch 49 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00077, 0.33725) 
+Epoch 50 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00074, 0.33882) 
+Epoch 51 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00072, 0.33977) 
+Epoch 52 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00069, 0.33991) 
+Epoch 53 - accuracy (train, validation): (1.00000, 0.91800) 	 loss (train, validation): (0.00067, 0.33900) 
+Epoch 54 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00065, 0.34110) 
+Epoch 55 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00063, 0.33999) 
+Epoch 56 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00061, 0.34240) 
+Epoch 57 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00059, 0.34259) 
+Epoch 58 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00058, 0.34253) 
+Epoch 59 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00056, 0.34216) 
+Epoch 60 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00054, 0.34345) 
+Epoch 61 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00053, 0.34239) 
+Epoch 62 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00052, 0.34289) 
+Epoch 63 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00050, 0.34334) 
+Epoch 64 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00049, 0.34375) 
+Epoch 65 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00048, 0.34413) 
+Epoch 66 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00047, 0.34565) 
+Epoch 67 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00046, 0.34536) 
+Epoch 68 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00045, 0.34518) 
+Epoch 69 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00044, 0.34631) 
+Epoch 70 - accuracy (train, validation): (1.00000, 0.91900) 	 loss (train, validation): (0.00043, 0.34586) 
+Epoch 71 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00042, 0.34687) 
+Epoch 72 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00041, 0.34655) 
+Epoch 73 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00040, 0.34664) 
+Epoch 74 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00039, 0.34693) 
+Epoch 75 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00038, 0.34763) 
+Epoch 76 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00038, 0.34787) 
+Epoch 77 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00037, 0.34776) 
+Epoch 78 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00036, 0.34832) 
+Epoch 79 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00036, 0.34815) 
+Epoch 80 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00035, 0.34862) 
+Epoch 81 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00034, 0.34910) 
+Epoch 82 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00034, 0.34872) 
+Epoch 83 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00033, 0.34936) 
+Epoch 84 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00033, 0.34981) 
+Epoch 85 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00032, 0.34982) 
+Epoch 86 - accuracy (train, validation): (1.00000, 0.92000) 	 loss (train, validation): (0.00032, 0.35004) 
+Epoch 87 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00031, 0.35054) 
+Epoch 88 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00031, 0.35096) 
+Epoch 89 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00030, 0.35101) 
+Epoch 90 - accuracy (train, validation): (1.00000, 0.92200) 	 loss (train, validation): (0.00030, 0.35154) 
+Epoch 91 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00029, 0.35168) 
+Epoch 92 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00029, 0.35196) 
+Epoch 93 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00028, 0.35184) 
+Epoch 94 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00028, 0.35211) 
+Epoch 95 - accuracy (train, validation): (1.00000, 0.92200) 	 loss (train, validation): (0.00028, 0.35216) 
+Epoch 96 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00027, 0.35268) 
+Epoch 97 - accuracy (train, validation): (1.00000, 0.92100) 	 loss (train, validation): (0.00027, 0.35313) 
+Epoch 98 - accuracy (train, validation): (1.00000, 0.92300) 	 loss (train, validation): (0.00026, 0.35299) 
+Epoch 99 - accuracy (train, validation): (1.00000, 0.92300) 	 loss (train, validation): (0.00026, 0.35301) 
+Epoch 100 - accuracy (train, validation): (1.00000, 0.92400) 	 loss (train, validation): (0.00026, 0.35328) 
+
+
+############################################### testing ###############################################
+
+Testing dataset: accuracy is 91.63% 	 loss is 0.50924
+
+
+############################################### visualizing the weights ###############################################
+
+
+
+############################################### plot curve and save ###############################################
+
+save classification error vs training curve to outputs/20170925_220724/visualization/training_curve/classification_error_graph.eps
+save average cross-entropy loss vs training curve to outputs/20170925_220724/visualization/training_curve/cross_entropy_loss_graph.eps
+
+
+############################################### done ###############################################
+
+run main.m
+
+
+############################################### configuration ###############################################
+

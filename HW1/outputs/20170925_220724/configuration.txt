@@ -1,0 +1,17 @@
+resume                        				0
+resume_file                   				'data_epoch_200_lr_0.1_weightdecay_1e-07_optim_sgd_seed_7417.mat'
+num_epoch                     				100
+num_class                     				10
+num_units                     				256
+num_units2                    				128
+im_width                      				28
+im_height                     				28
+data_path                     				'dataset'
+save_dir                      				'outputs/20170925_220724'
+cache_path                    				'cache'
+debug_mode                    				1
+vis                           				1
+seed                          				9237
+initialization_method         				'gaussian'
+check_grad                    				0
+num_check                     				10
